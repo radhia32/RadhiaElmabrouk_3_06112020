@@ -1,0 +1,18 @@
+
+
+ p {
+
+  margin : 1rem;
+ }
+
+
+ %button {
+
+ }
+ .button {
+   @extend %button;
+
+  border-radius : 3px;
+  padding:5px;
+  background : blue;
+ }
