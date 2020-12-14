@@ -1,0 +1,71 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.header {
+    text-align: center;   
+}
+
+.restmain{
+  
+    margin-top: -30px;
+    background-color: #f6f6f6;
+    border-radius: 50px 50px 0px 0px;
+}
+  
+.restheader_image {
+ 
+    max-width: 100%;
+    height: auto;
+    background-image: url(../image/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    font-size: 23px;
+    max-width: 100%;
+
+}  
+
+.restheader_titre{
+    
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px 50px 0px 0px;
+    background-color: #f6f6f6;
+    margin-top:20px;
+    font-family: Shrikhand, sans-serif; 
+    font-size: 23px;
+}
+
+h1 {
+  
+    font-size: 27px;
+    font-weight: 500;
+    color: black;
+    margin: 5px;
+    font-family: "Shrikhand";
+    margin: 30px 6% 0px;
+    
+
+}
+
+.plat_detail{
+
+    border-radius: 20px;
+    background:white;
+    padding: 0px 30px 0px 10px;
+    margin: 15px;
+    box-shadow: 2px 2px 5px 2px #dddddd;
+    border-radius: 15px;
+    animation: box-appear 2.5s;
+    overflow: hidden;
+}
+
+
+
+  
+
+
+

@@ -2,7 +2,8 @@ body {
   padding: 0;
   margin: 0;
   background: #FFF;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 0.9em;
 }
 
@@ -54,8 +55,12 @@ ul {
   margin: 15px;
   border-radius: 10px;
   padding: 20px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   width: 0%;
@@ -65,8 +70,13 @@ ul {
 body {
   margin: 0px;
   padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .header {
@@ -90,8 +100,12 @@ body {
 }
 
 .restheader_titre {
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50px 50px 0px 0px;
   background-color: #f6f6f6;
   margin-top: 20px;
@@ -113,9 +127,11 @@ h1 {
   background: white;
   padding: 0px 30px 0px 10px;
   margin: 15px;
-  box-shadow: 2px 2px 5px 2px #dddddd;
+  -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
+          box-shadow: 2px 2px 5px 2px #dddddd;
   border-radius: 15px;
-  animation: box-appear 2.5s;
+  -webkit-animation: box-appear 2.5s;
+          animation: box-appear 2.5s;
   overflow: hidden;
 }
 
@@ -160,7 +176,8 @@ a {
   background: #FFF;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  box-shadow: 2px 4px 8px 3px #dadade;
+  -webkit-box-shadow: 2px 4px 8px 3px #dadade;
+          box-shadow: 2px 4px 8px 3px #dadade;
   margin-bottom: 20px;
   position: relative;
   padding: 25px;
@@ -170,7 +187,8 @@ a {
   background: #FFF;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  box-shadow: 2px 4px 8px 3px #dadade;
+  -webkit-box-shadow: 2px 4px 8px 3px #dadade;
+          box-shadow: 2px 4px 8px 3px #dadade;
   margin-bottom: 20px;
   position: relative;
   padding: 25px;
@@ -180,7 +198,8 @@ a {
   background: #FFF;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  box-shadow: 2px 4px 8px 3px #dadade;
+  -webkit-box-shadow: 2px 4px 8px 3px #dadade;
+          box-shadow: 2px 4px 8px 3px #dadade;
   margin-bottom: 20px;
   position: relative;
   padding: 25px;
@@ -190,7 +209,8 @@ a {
   background: #FFF;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  box-shadow: 2px 4px 8px 3px #dadade;
+  -webkit-box-shadow: 2px 4px 8px 3px #dadade;
+          box-shadow: 2px 4px 8px 3px #dadade;
   margin-bottom: 50px;
   position: relative;
   padding: 25px;
@@ -233,9 +253,15 @@ h2 {
   height: 170px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .image-note {
@@ -246,9 +272,15 @@ h2 {
   height: 170px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .image-francaise {
@@ -259,9 +291,15 @@ h2 {
   height: 170px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .image-delice {
@@ -272,9 +310,15 @@ h2 {
   height: 170px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .logo {
@@ -289,19 +333,22 @@ h2 {
 .btn {
   padding: 20px;
   color: white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA 5%, #9356DC);
   border-radius: 30px;
   font-size: 1.1em;
   width: 50%;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   position: relative;
 }
 
 .option__number {
   position: absolute;
-  left: -0.3rem;
+  left: -.3rem;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50px;
@@ -313,7 +360,9 @@ h2 {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .fonct__option {
@@ -328,12 +377,15 @@ h2 {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .option__icon {
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
 /*# sourceMappingURL=style.css.map */
