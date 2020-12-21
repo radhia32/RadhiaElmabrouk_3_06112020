@@ -5,8 +5,9 @@
 
 
 a{
-  color:black;
+  color:white;
   text-decoration: none;
+  font-family: "roboto", "sans-serif"; 
 }
 
   .restaurant-plat1-menu{
@@ -83,6 +84,7 @@ background-color:white;
 .nav-h2{
   margin: 20px 20px 20px; 
   text-align: center;
+  font-family: "Shrikhand", "sans-serif"; 
 }
 
 
@@ -91,12 +93,14 @@ color: black;
 font-size: 1.5rem;
 font-weight: 700;
 padding: 1rem;
+font-family: "Shrikhand", "sans-serif"; 
 }
 
 .localisation {
   background: #ededef;
   padding: 1rem 0;
   text-align: center;
+  font-family: shrikhand ;
 
 }
 
@@ -149,7 +153,6 @@ padding: 1rem;
 
 .image-delice{
   background-image: url(../image/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
- 
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -203,7 +206,7 @@ padding: 1rem;
 }
 
 .fonct__option {
-  position: relative;
+
   margin: 0 0 30px;
   padding-left: 30px;
   padding-top: 30px;
@@ -215,12 +218,15 @@ padding: 1rem;
   font-weight: 700;
   text-align: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .option__icon{
 
   text-align: center;
   align-items: center;
+  display: inline-block;
 }
 
 

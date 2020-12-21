@@ -1,14 +1,19 @@
-body {
-  padding: 0;
-  margin: 0;
-  background: #FFF;
-  box-sizing: border-box;
-  font-size: 0.9em;
+.nav {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  font-family: Roboto, sans-serif;
 }
 
 .footer {
   background: #313132;
-  padding-bottom: 20px;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+
+.footer__titre {
+  color: white;
 }
 
 h2 {
@@ -20,6 +25,16 @@ h2 {
   margin-top: 0;
 }
 
+h3 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
 .footer__icon {
   margin-right: 10px;
   width: 3%;
@@ -28,10 +43,18 @@ h2 {
 
 li {
   color: white;
+  list-style: none;
 }
 
 ul {
   color: white;
+}
+
+.footer__heading {
+  color: white;
+  font-family: "shrikhand", sans-serif;
+  margin-left: 25px;
+  padding-bottom: 0px;
 }
 
 .detail_prix {
@@ -50,23 +73,12 @@ ul {
   padding: 3px;
 }
 
-.validation {
-  margin: 15px;
-  border-radius: 10px;
-  padding: 20px;
-  justify-content: center;
-  background-color: #99E2D0;
-  display: flex;
-  justify-content: center;
-  width: 0%;
-  float: right;
-}
-
 body {
   margin: 0px;
   padding: 0px;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .header {
@@ -74,54 +86,77 @@ body {
 }
 
 .restmain {
-  margin-top: -30px;
+  margin-top: -100px;
   background-color: #f6f6f6;
-  border-radius: 50px 50px 0px 0px;
+  border-radius: 45px 45px 0px 0px;
+  z-index: 1;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  min-height: 100%;
+  position: relative;
 }
 
 .restheader_image {
   max-width: 100%;
-  height: auto;
   background-image: url(../image/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
   width: 100%;
   font-size: 23px;
   max-width: 100%;
+  position: relative;
 }
 
-.restheader_titre {
+.restheader__titre {
   justify-content: space-between;
   align-items: center;
   border-radius: 50px 50px 0px 0px;
   background-color: #f6f6f6;
   margin-top: 20px;
-  font-family: Shrikhand, sans-serif;
+  font-family: "Shrikhand", "sans-serif";
   font-size: 23px;
+  position: relative;
 }
 
 h1 {
   font-size: 27px;
   font-weight: 500;
   color: black;
-  margin: 5px;
-  font-family: "Shrikhand";
-  margin: 30px 6% 0px;
+  font-family: "Shrikhand", "sans-serif";
+  padding: 20px;
 }
 
 .plat_detail {
-  border-radius: 20px;
   background: white;
-  padding: 0px 30px 0px 10px;
+  padding: 0px 50px 0px 10px;
   margin: 15px;
   box-shadow: 2px 2px 5px 2px #dddddd;
   border-radius: 15px;
-  animation: box-appear 2.5s;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", "sans-serif";
+}
+
+.plat {
+  border-bottom: 3px solid #99E2D0;
+  padding-top: 6px;
+}
+
+.menu-nouveau {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: #99e2d0;
+  color: #58a492;
+  width: 20%;
+  margin: 15px;
+  border-radius: 7px;
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
+  font-family: "roboto", "sans-serif";
 }
 
 .restaurant-plat1-menu {
@@ -203,6 +238,7 @@ a {
 .nav-h2 {
   margin: 20px 20px 20px;
   text-align: center;
+  font-family: "Shrikhand", "sans-serif";
 }
 
 h2 {
@@ -210,12 +246,14 @@ h2 {
   font-size: 1.5rem;
   font-weight: 700;
   padding: 1rem;
+  font-family: "Shrikhand", "sans-serif";
 }
 
 .localisation {
   background: #ededef;
   padding: 1rem 0;
   text-align: center;
+  font-family: shrikhand;
 }
 
 .present {
@@ -317,7 +355,6 @@ h2 {
 }
 
 .fonct__option {
-  position: relative;
   margin: 0 0 30px;
   padding-left: 30px;
   padding-top: 30px;
@@ -329,11 +366,14 @@ h2 {
   font-weight: 700;
   text-align: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .option__icon {
   text-align: center;
   align-items: center;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */

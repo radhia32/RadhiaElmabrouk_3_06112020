@@ -3,6 +3,7 @@ body {
     padding: 0px;
     display: flex;
     flex-direction: column; 
+    height:100%;
 }
 
 .header {
@@ -11,32 +12,41 @@ body {
 
 .restmain{
   
-    margin-top: -30px;
+    margin-top: -100px;
     background-color: #f6f6f6;
-    border-radius: 50px 50px 0px 0px;
+    border-radius: 45px 45px 0px 0px;
+    z-index: 1;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+      
+        min-height:100%; 
+        position:relative;
+        
+        
 }
   
 .restheader_image {
  
     max-width: 100%;
-    height: auto;
+    
     background-image: url(../image/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-size: cover;
     width: 100%;
     font-size: 23px;
     max-width: 100%;
+    position:relative;
 
 }  
 
-.restheader_titre{
-    
+.restheader__titre{
     justify-content: space-between;
     align-items: center;
     border-radius: 50px 50px 0px 0px;
     background-color: #f6f6f6;
     margin-top:20px;
-    font-family: Shrikhand, sans-serif; 
+    font-family: 'Shrikhand', 'sans-serif'; 
     font-size: 23px;
+  position: relative;
 }
 
 h1 {
@@ -44,23 +54,40 @@ h1 {
     font-size: 27px;
     font-weight: 500;
     color: black;
-    margin: 5px;
-    font-family: "Shrikhand";
-    margin: 30px 6% 0px;
-    
-
+    font-family: 'Shrikhand', 'sans-serif';
+    padding: 20px;
 }
 
 .plat_detail{
 
-    border-radius: 20px;
     background:white;
-    padding: 0px 30px 0px 10px;
+    padding: 0px 50px 0px 10px;
     margin: 15px;
     box-shadow: 2px 2px 5px 2px #dddddd;
     border-radius: 15px;
-    animation: box-appear 2.5s;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', 'sans-serif';  
+}
+
+.plat{
+
+    border-bottom: 3px solid #99E2D0;
+    padding-top: 6px;
+}
+.menu-nouveau{
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #99e2d0;
+    color: #58a492;
+    width: 20%;
+    margin: 15px;
+    border-radius: 7px;
+
+    
 }
 
 
