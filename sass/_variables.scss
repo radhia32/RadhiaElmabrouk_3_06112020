@@ -3,20 +3,19 @@
 
         position: absolute;
         right: 10px;
-        font-weight: bold;
-        font-family: "Roboto", Verdana, Trebuchet, sans-serif;
         margin-right: 30px;
 }
 
-.fas.fa-check {
-    background-color: white;
-    margin: 35%;
-    border-radius: 50%;
-    color: #99e2d0;
-    padding: 3px;
+.nomrestaurant{
+    display: flex;
+    max-width: 100%;
+    position: relative;
 }
 
-
+.nomrestaurant h2{
+  
+        font-family: "Shrikhand";
+}
 
 
 

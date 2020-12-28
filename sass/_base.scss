@@ -1,52 +1,70 @@
 
-    
+.restaurant {
+  background: #f6f6f6;
+  padding: 0 1.2rem 3rem;
+}
+
+.option-global{
+  display: flex;
+  flex-direction: column;
+ 
+}   
   .nav{
     list-style-type: none;
     margin: 10px;
     padding: 10px;
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
+   
   }
 
+  footer{
 
-.footer{
+    background: #313132;
+    flex-direction: column;
+    display: flex;
+    width: 100%; 
+  
+  }
 
-  background: #313132;
-flex-direction: column;
-display: flex;
-width: 100%; 
+  .footer a{
 
-}
+  color:white;
+  }
+
+  .footer__heading{
+    color: white;
+    margin-left: 25px;
+    padding-bottom: 0px;
+  }
+  
  
-
-.footer__titre{
-
+  .footer__titre{
   color: white ;
 }
-    h2 {
-      
-      color:white;
-      font-weight: normal;
+   
+  h2 {
       font-size: 1.3em;
       padding-left: 30px;
       padding-top: 20px;
       margin-top: 0;
     }
 
-    h3{
-
-      color: black;
-      font-family: 'Roboto', sans-serif;
+  h3{
+     
+      padding-left: 20px;
     }
 
-    p{
+  h4{
+  margin-bottom: 5px;
+  }
 
-      font-family: 'Roboto', sans-serif;
-      color: black;
-    }
+  P{
+  margin-top: 5px;
 
-    .footer__icon {
+}
+   .footer__icon {
       margin-right: 10px;
-      width: 3%;
+       width: 3%;
       color:white
     }
    
@@ -61,13 +79,3 @@ ul{
 
 }
 
-.footer__heading{
-
-  color: white;
-
-  font-family: "shrikhand", sans-serif;
-  margin-left: 25px;
-  padding-bottom: 0px;
-
-}
-      

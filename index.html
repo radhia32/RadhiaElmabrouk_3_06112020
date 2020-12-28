@@ -2,51 +2,43 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/b652649216.js" crossorigin="anonymous"></script>
-    <link href = "https://fonts.googleapis.com/css2? family = Open + Sans & display = swap" rel = "feuille de style">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-   
+    <link rel="stylesheet"href="css/style.css" />
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b652649216.js"crossorigin="anonymous"></script>
     <title>Ohmyfood</title>
 </head>
 <body>
      <!--LOADING SPINNER-->
     <section class="section">
-            <button class="buttonload">
-            <i class="fa fa-spinner fa-spin"></i>chargement...
+            <button class="rotate-scale-up">
+            <i class="rotate-scale-up"></i>OHMYFOOD
             </button>
     </section>
-
 <main>
         <!-- Début Header --> 
-<header class="header">
-            <div class="logo">
+    <header class="header">
+        <div class="logo">
             <img src="image/logo/ohmyfood@2x.svg" alt="logo">
-            </div>
-</header>
+        </div>
+    </header>
        
         <div class="localisation">
             <span class="fas fa-map-marker-alt"></span>
                   Paris, Belleville 
-            </div> 
+        </div> 
 
         <section class="present">
                 
-                <h2>Réservez le menu qui vous convient</h2>
-                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p> 
-
-            <button class="btn">Explorer nos restaurants</button>
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p> 
+                <div id="hov"
+          class="btn">Explorer nos restaurants</button>
 
         </section>
 
         <section class="nav">
-                <h2 class="nav_h2">Fonctionnement</h2>       
-        </section>     
+            <h2 class="nav_h2">Fonctionnement</h2>   
+            <div class="option-global">    
             <div class="option fonct__option">
                 <span class="option__number">1</span><i class="fas fa-mobile-alt option__icon"></i> Choisissez un restaurant
             </div>
@@ -56,59 +48,71 @@
             <div class="option fonct__option">
                 <span class="option__number">3</span><i class="fas fa-store option__icon"></i> Dégustez au restaurant
             </div>
-     
-   
-        <section id="restaurant" class="restaurant"></section>
+            </div>   
+        </section>  
+
+        <section id="restaurant" class="restaurant">
                 <h2 class="title">Restaurants</h2>
             <div class="restaurantcartes">
                <!-- Carte1 -->   
             <div class="restaurantcarte">
-            <a href="la_palette_du_gout.html">
             <div class="image-palette">
-                <p class="menu-nouveau">Nouveau</p></div>
-                <i class="far fa-heart love__icon heart1">
-                    <i class="fas fa-heart love1__anim"></i>
-                </i>
-            <div class="restaurantcarte1">
-                <h3 class="restaurant-plat1-menu">la palette du goût</h3>
-                <p class="restaurant-plat1-ville">Ménilmontant</p>    
-            </div>   
-            </a>
-            </div> 
+                <p class="menu-nouveau">Nouveau</p></div> 
+            <div class="restaurant-plat1-menu">la palette du goût
+                <a href="la_palette_du_gout.html">
+                <div class="heart">
+                    <i class="far fa-heart fa-gradient" aria-hidden="true"></i>  
+                </div>
+                <p class="restaurant-plat1-ville">Ménilmontant</p>   
+            </div>
+                </a>  
+            </div>
+            </div>
+            </div>  
+    
             <!-- Carte2 -->  
             <div class="restaurantcarte">
-            <a href="La_note_enchantée.html">
             <div class="image-note">
                 <p class="menu-nouveau">Nouveau</p></div>
-            <div class="restaurantcarte2">
-                <h3 class="restaurant-plat2-menu">la note enchantée</h3>
-                <p class="restaurant-plat2-ville">Charonne</p>    
-            </div>   
-            </a>
-            </div> 
+                <div class="restaurant-plat1-menu">la note enchantée 
+                <a href="La_note_enchantée.html">
+                    <div class="heart">
+                        <i class="far fa-heart fa-gradient" aria-hidden="true"></i>
+                    </div>
+                <p class="restaurant-plat2-ville">Charonne</p>  
+                    </div>  
+                </a> 
+                </div>
+            </div>
+            </div>
                  <!-- Carte3 -->  
             <div class="restaurantcarte">
-            <a href="A_la_francaise.html">
             <div class="image-francaise"></div>
-            <div class="restaurantcarte3">
-                <h3 class="restaurant-plat3-menu">A la Francaise</h3>
-                <p class="restaurant-plat3-ville">cité rouge</p>    
-            </div>   
-            </a>
-            </div>
+                <div class="restaurant-plat1-menu">A la Francaise 
+                <a href="A_la_francaise.html">
+                    <div class="heart">
+                        <i class="far fa-heart fa-gradient" aria-hidden="true"></i>
+                    </div>
+                <p class="restaurant-plat3-ville">cité rouge</p>
+                </div>
+                </a> 
+            </div> 
+            </div>  
                 <!-- Carte4 -->  
             <div class="restaurantcarte">
-            <a href="le_délice_des_sens.html">     
-            <div class="image-delice">
+            <div class="image-delice"></div>
+                <div class="restaurant-plat1-menu">le délice des sens
+                 <a href="le_délice_des_sens.html">  
+                    <div class="heart">
+                        <i class="far fa-heart fa-gradient" aria-hidden="true"></i>  
+                    </div>
+                <p class="restaurant-plat4-ville">Folie Méricour</p>  
+                </div>
+                </a>  
+            </div>       
             </div>
-            <div class="restaurantcarte4">
-                <h3 class="restaurant-plat4-menu">le délice des sens</h3>
-                <p class="restaurant-plat4-ville">Folie Méricour</p>    
-            </div>   
-            </a>   
-            </div>
-            </section>
-    
+    </section>
+    </section>
         <!--PIED DE PAGE-->
         <footer class="footer"><!--PIED DE PAGE-->
             <h2 class="footer__titre">ohmyfood</h2>

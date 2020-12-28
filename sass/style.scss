@@ -2,98 +2,61 @@
 @import'./_base.scss';
 @import'./_variables.scss';
 @import'./_pages.scss';
-
+@import'./_animation.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&family=Shrikhand&display=swap');
 
 a{
-  color:white;
+
+  color: black;
   text-decoration: none;
-  font-family: "roboto", "sans-serif"; 
+  
 }
 
-  .restaurant-plat1-menu{
-  margin:auto;
-  }
   .restaurant-plat1-ville{
     margin:auto;
   }
-  .restaurant-plat2-menu{
-    margin:auto;
-    }
+ 
   .restaurant-plat2-ville{
       margin:auto;
   }
 
-  .restaurant-plat3-menu{
-    margin:auto;
-  }
   .restaurant-plat3-ville{
     margin:auto;
   }
 
-  .restaurant-plat4-menu{
-     margin :auto;
-  }
   .restaurant-plat4-ville{
   margin:auto;
   }
-  .restaurantcarte1{
-  background: #FFF;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  box-shadow: 2px 4px 8px 3px #dadade;
-  margin-bottom: 20px;
-  position: relative; 
-  padding: 25px;
-        
-}
 
-.restaurantcarte2{
-  background: #FFF;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  box-shadow: 2px 4px 8px 3px #dadade;
-  margin-bottom: 20px;
-  position: relative; 
-  padding: 25px;
-}
 
-.restaurantcarte3{
-  background: #FFF;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  box-shadow: 2px 4px 8px 3px #dadade;
-  margin-bottom: 20px;
-  position: relative; 
-  padding: 25px;
-}
+  .restaurantcarte{
+  
+    position: relative;
+    background: #FFF;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-bottom: 20px;
+   
+  }
 
-.restaurantcarte4{
-  background: #FFF;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  box-shadow: 2px 4px 8px 3px #dadade;
-  margin-bottom: 50px;
-  position: relative; 
-  padding: 25px;
-}
+  .restaurant-plat1-menu{
 
-#restaurant.restaurant{
-background-color:white;
- 
-}
+    box-shadow: 2px 4px 8px 3px #dadade;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background: white;
+    padding-bottom: 20px;
+    color: black;
+  }
+
 .nav-h2{
   margin: 20px 20px 20px; 
   text-align: center;
   font-family: "Shrikhand", "sans-serif"; 
-}
-
-
-h2 {
-color: black;
-font-size: 1.5rem;
-font-weight: 700;
-padding: 1rem;
-font-family: "Shrikhand", "sans-serif"; 
 }
 
 .localisation {
@@ -118,11 +81,12 @@ font-family: "Shrikhand", "sans-serif";
   background-position: center;
   width: 100%;
   height: 170px;
-  border-top-left-radius:30px ;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;;
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
+  position: relative;
 }
 
 .image-note{
@@ -131,8 +95,8 @@ font-family: "Shrikhand", "sans-serif";
   background-position: center;
   width: 100%;
   height:170px;
-  border-top-left-radius:30px ;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;;
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
@@ -144,8 +108,8 @@ font-family: "Shrikhand", "sans-serif";
   background-position: center;
   width: 100%;
   height: 170px;
-  border-top-left-radius:30px ;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;;
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
@@ -157,11 +121,12 @@ font-family: "Shrikhand", "sans-serif";
   background-position: center;
   width: 100%;
   height: 170px;
-  border-top-left-radius:30px ;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;;
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
+ 
 }
 
 
@@ -171,7 +136,7 @@ font-family: "Shrikhand", "sans-serif";
     padding-bottom: 15px;
     width: 50%;
     margin: auto;
-    font-weight: bold;
+    
 }
 
 .btn  {
@@ -185,49 +150,63 @@ font-family: "Shrikhand", "sans-serif";
     align-items: center;
     cursor: pointer;
     position: relative;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
   }
 
 .option__number {
-  position: absolute;
-  left: -.3rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50px;
-  background: #9356DC;
-  color: white;
-  font-size: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  align-items: center;
   
+  position: relative;
+    left: -0.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50px;
+    background: #9356DC;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+   
 }
 
 .fonct__option {
 
   margin: 0 0 30px;
-  padding-left: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-radius:50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 50px;
   background: #F5F5F6;
   text-align: center;
-  font-size: 20px;
-  font-weight: 700;
   text-align: center;
+  position: relative;
+  margin-right: 0px;
+  display: flex ;
+  box-shadow: 0 0.7rem 0.7rem 0 #dddddd;
   align-items: center;
-  display: flex;
-  flex-direction: column;
-}
+  font-family: "Roboto";  
+}    
+
 
 .option__icon{
 
   text-align: center;
   align-items: center;
-  display: inline-block;
+ padding-left: 10px;
+ padding-right:10px ;
 }
+
+/* cache linput de base */
+
+input checkbox{
+  display : none;
+}
+
+
 
 
 
