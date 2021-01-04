@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column; 
     height:100%;
-
+    font-family: "roboto";
 }
 
 .restmain{
@@ -16,11 +16,9 @@ body {
     width: 100%;
     min-height:100%; 
     position:relative;
-    font-family: 'Roboto';
 }
   
 .restheader_image {
- 
     max-width: 100%; 
     background-image: url(../image/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-size: cover;
@@ -28,25 +26,21 @@ body {
     font-size: 23px;
     max-width: 100%;
     position:relative;
-
 }  
 
 .header {
    
-    margin-bottom: 0px;
-    margin-right: 60px;
-    margin-left: 60px;
+    flex-direction: column;
     display: flex;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .header_logo{
 
-    text-align: center;
-    justify-content: center;
+   justify-content: center;
     display: flex;
-    flex-wrap: wrap;
-    
+    text-align: center;    
 }
 
 .restheader__titre{
@@ -60,13 +54,6 @@ body {
     position: relative;
 }
 
-h1 {
-  
-    font-weight: 500;
-    font-family: 'Shrikhand', 'sans-serif';
-    padding: 20px;
-}
-
 .plat_detail{
 
     background:white;
@@ -77,7 +64,12 @@ h1 {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto', 'sans-serif';  
+    font-family: 'Roboto', 'sans-serif'; 
+}
+
+.plat_detail:hover{
+    background: rgba(147, 86, 220, 0.15);
+    cursor: pointer;
 }
 
 .plat{
@@ -96,6 +88,56 @@ h1 {
     border-radius: 7px;
     font-weight: bold;  
 }
+
+.fa-check-circle{
+  
+    color:white;
+    font-size: 1.3rem;
+}
+.item-icon{
+
+    position: absolute;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 45PX;
+    width: 30PX;
+}
+
+.item-icon :hover{
+    cursor: pointer;
+    position: absolute;
+    background: #99e2d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 45px;
+    width: 30px;
+    box-shadow: 2px 2px 5px 2px #dddddd;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: 1s  background-color 250ms;
+    
+    }
+       
+span.detail_prix {
+    right: 30px; 
+    position: absolute;
+    width: 30px; 
+ 
+}
+
+span.detail_prix:hover{
+   
+  cursor: pointer;
+  right: 80px; 
+  
+}
+
+ 
 
 
 

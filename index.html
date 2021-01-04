@@ -9,11 +9,13 @@
 </head>
 <body>
      <!--LOADING SPINNER-->
-    <section class="section">
-            <button class="rotate-scale-up">
-            <i class="rotate-scale-up"></i>OHMYFOOD
-            </button>
-    </section>
+
+    <div class="loader">
+        <div class="loader__spinner">
+        </div>  
+        <div class="loader__ecran">
+        </div>
+    </div>
 <main>
         <!-- Début Header --> 
     <header class="header">
@@ -30,7 +32,7 @@
         <section class="present">
                 
             <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p> 
+            <p class="presentation-dexp">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p> 
                 <div id="hov"
           class="btn">Explorer nos restaurants</button>
 
@@ -52,65 +54,75 @@
         </section>  
 
         <section id="restaurant" class="restaurant">
-                <h2 class="title">Restaurants</h2>
+            <h2 class="title">Restaurants</h2>
             <div class="restaurantcartes">
                <!-- Carte1 -->   
-            <div class="restaurantcarte">
-            <div class="image-palette">
-                <p class="menu-nouveau">Nouveau</p></div> 
-            <div class="restaurant-plat1-menu">la palette du goût
-                <a href="la_palette_du_gout.html">
-                <div class="heart">
-                    <i class="far fa-heart fa-gradient" aria-hidden="true"></i>  
-                </div>
-                <p class="restaurant-plat1-ville">Ménilmontant</p>   
-            </div>
-                </a>  
-            </div>
-            </div>
-            </div>  
+                <div class="restaurantcarte">
+                    <div class="image-palette">   
+                        <p class="menu-nouveau">Nouveau</p>
+                    </div>
+                    <div class="restaurant-plat1-menu">
+                        <div class="titre">
+                        <h2>la palette du goût</2>
+                        <h3>Ménilmontant</h3>
+                    </div>
+                    <a href="la_palette_du_gout.html" class="action">
+                        <i class="far fa-heart inactive" aria-hidden="true"></i>  
+                        <i class="fas fa-heart active" aria-hidden="true"></i>  
+                    </a> 
+                    </div>  
+                </div>  
     
             <!-- Carte2 -->  
-            <div class="restaurantcarte">
-            <div class="image-note">
-                <p class="menu-nouveau">Nouveau</p></div>
-                <div class="restaurant-plat1-menu">la note enchantée 
-                <a href="La_note_enchantée.html">
-                    <div class="heart">
-                        <i class="far fa-heart fa-gradient" aria-hidden="true"></i>
+                <div class="restaurantcarte">
+                    <div class="image-note">
+                        <p class="menu-nouveau">Nouveau</p>
                     </div>
-                <p class="restaurant-plat2-ville">Charonne</p>  
+                    <div class="restaurant-plat1-menu">
+                        <div class="titre">
+                        <h2>la note enchantée </h2>
+                        <h3>Charonne</h3>
+                    </div>
+                    <a href="La_note_enchantée.html" class="action">
+                        <i class="far fa-heart inactive" aria-hidden="true"></i>  
+                        <i class="fas fa-heart active" aria-hidden="true"></i>  
+                    </a> 
                     </div>  
-                </a> 
-                </div>
-            </div>
-            </div>
+                </div>  
+                
+        
                  <!-- Carte3 -->  
-            <div class="restaurantcarte">
-            <div class="image-francaise"></div>
-                <div class="restaurant-plat1-menu">A la Francaise 
-                <a href="A_la_francaise.html">
-                    <div class="heart">
-                        <i class="far fa-heart fa-gradient" aria-hidden="true"></i>
+                <div class="restaurantcarte">
+                    <div class="image-francaise">  
                     </div>
-                <p class="restaurant-plat3-ville">cité rouge</p>
+                    <div class="restaurant-plat1-menu">
+                        <div class="titre">
+                        <h2>A la Francaise</h2>
+                        <h3>cité rouge</h3>
+                    </div> 
+                    <a href="A_la_francaise.html" class="action">
+                        <i class="far fa-heart inactive" aria-hidden="true"></i>  
+                        <i class="fas fa-heart active" aria-hidden="true"></i>  
+                    </a> 
+                    </div>  
                 </div>
-                </a> 
-            </div> 
-            </div>  
+
                 <!-- Carte4 -->  
-            <div class="restaurantcarte">
-            <div class="image-delice"></div>
-                <div class="restaurant-plat1-menu">le délice des sens
-                 <a href="le_délice_des_sens.html">  
-                    <div class="heart">
-                        <i class="far fa-heart fa-gradient" aria-hidden="true"></i>  
+                <div class="restaurantcarte">
+                    <div class="image-delice">
                     </div>
-                <p class="restaurant-plat4-ville">Folie Méricour</p>  
+                    <div class="restaurant-plat1-menu">
+                        <div class="titre">
+                        <h2>le délice des sens</h2>
+                        <h3>Folie Méricour</h3>
+                    </div>
+                    <a href="le_délice_des_sens.html" class="action">
+                        <i class="far fa-heart inactive" aria-hidden="true"></i>  
+                        <i class="fas fa-heart active" aria-hidden="true"></i>  
+                    </a> 
+                    </div>  
                 </div>
-                </a>  
-            </div>       
-            </div>
+                           
     </section>
     </section>
         <!--PIED DE PAGE-->

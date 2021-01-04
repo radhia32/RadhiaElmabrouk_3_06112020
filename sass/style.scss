@@ -2,10 +2,8 @@
 @import'./_base.scss';
 @import'./_variables.scss';
 @import'./_pages.scss';
-@import'./_animation.scss';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&family=Shrikhand&display=swap');
+@import'./_medias-queries.scss';
+
 
 a{
 
@@ -16,6 +14,7 @@ a{
 
   .restaurant-plat1-ville{
     margin:auto;
+
   }
  
   .restaurant-plat2-ville{
@@ -30,7 +29,6 @@ a{
   margin:auto;
   }
 
-
   .restaurantcarte{
   
     position: relative;
@@ -38,28 +36,75 @@ a{
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     margin-bottom: 20px;
-   
+   font-family: "roboto";
   }
 
-  .restaurant-plat1-menu{
+  .restaurantcarte .restaurant-plat1-menu{
 
     box-shadow: 2px 4px 8px 3px #dadade;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    padding-top: 20px;
-    padding-left: 20px;
     background: white;
-    padding-bottom: 20px;
-    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
   }
 
-.nav-h2{
+  .restaurantcarte .restaurant-plat1-menu .titre{
+  flex-grow: 1;
+  margin: 10px;
+  }
+
+  .restaurant-plat1-menu .titre h2{
+
+    padding: 0;
+    margin:0 0 5px 0;
+  }
+
+  .restaurant-plat1-menu .titre h3{
+
+    margin:0;
+    padding:0;
+    font-weight:normal ;
+  }
+
+.restaurant-plat1-menu .action{
+
+  position:relative;
+  align-self: flex-start;
+  padding: 15px; 
+  font-size: 2,5em;
+  overflow: hidden;
+ cursor: pointer;
+
+}
+.nomrestaurant .action{
+
+  position:relative;
+  align-self: flex-start;
+  padding: 30px; 
+  font-size: 2,5em;
+  overflow: hidden;
+ cursor: pointer;
+
+}
+   .action .far{
+    position:absolute;
+    transition: all .25s linear;
+    overflow: hidden;
+    background: linear-gradient(#FF79DA, #9356DC);
+    font-size: 20px;
+  }
+
+  .nav-h2{
   margin: 20px 20px 20px; 
   text-align: center;
   font-family: "Shrikhand", "sans-serif"; 
 }
 
-.localisation {
+  .localisation {
   background: #ededef;
   padding: 1rem 0;
   text-align: center;
@@ -67,7 +112,7 @@ a{
 
 }
 
-.present{
+  .present{
   background: #F5F5F6;
   padding-top:20px;
   padding-bottom: 10%;
@@ -87,9 +132,10 @@ a{
   justify-content: flex-end;
   align-items: baseline;
   position: relative;
+  object-fit: cover;
 }
 
-.image-note{
+  .image-note{
   background-image: url(../image/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -102,7 +148,7 @@ a{
   align-items: baseline;
 }
 
-.image-francaise{
+  .image-francaise{
   background-image: url(../image/restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -129,7 +175,6 @@ a{
  
 }
 
-
 .logo  {
     display: block;
     padding-top: 20px;
@@ -148,7 +193,7 @@ a{
     width: 50%;
     text-align: center;
     align-items: center;
-    cursor: pointer;
+    cursor:pointer;
     position: relative;
     margin: auto;
     margin-bottom: 40px;
@@ -170,12 +215,10 @@ a{
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align: center;
-   
+    text-align: center; 
 }
 
 .fonct__option {
-
   margin: 0 0 30px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -191,23 +234,17 @@ a{
   font-family: "Roboto";  
 }    
 
+.fonct__option:hover {
+
+  background: rgba(147, 86, 220, 0.15);
+  cursor: pointer;
+}
 
 .option__icon{
 
   text-align: center;
   align-items: center;
- padding-left: 10px;
- padding-right:10px ;
+ padding-left: 20px;
+ padding-right:20px ;
 }
-
-/* cache linput de base */
-
-input checkbox{
-  display : none;
-}
-
-
-
-
-
 

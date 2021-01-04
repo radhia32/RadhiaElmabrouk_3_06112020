@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&family=Shrikhand&display=swap");
+@charset "UTF-8";
 .restaurant {
   background: #f6f6f6;
   padding: 0 1.2rem 3rem;
@@ -39,6 +37,15 @@ footer {
   color: white;
 }
 
+h1 {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-family: "Shrikhand", "sans-serif";
+  width: 100%;
+}
+
 h2 {
   font-size: 1.3em;
   padding-left: 30px;
@@ -54,8 +61,17 @@ h4 {
   margin-bottom: 5px;
 }
 
-P {
+p.presentation-dexp {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+p {
   margin-top: 5px;
+  font-size: 0.9rem;
+  width: 70%;
+  white-space: nowrap;
 }
 
 .footer__icon {
@@ -73,12 +89,136 @@ ul {
   color: white;
 }
 
-.detail_prix {
+.loader__spinner {
+  z-index: 3;
+  animation: spin 3s forwards linear;
+  border: solid 15px transparent;
+  border-radius: 50%;
+  border-right-color: #9356DC;
+  border-top-color: #9356DC;
+  box-sizing: border-box;
+  height: 150px;
+  width: 150px;
+  position: fixed;
+  left: calc(50% - 75px);
+  top: calc(50% - 75px);
+  opacity: 0;
+}
+.loader__spinner::before {
+  animation: spin 3s 250ms forwards linear;
+  border: solid 15px transparent;
+  border-radius: 50%;
+  border-right-color: #FF79DA;
+  border-top-color: #FF79DA;
+  box-sizing: border-box;
+  content: "";
+  z-index: 3;
+  height: 120px;
+  width: 120px;
   position: absolute;
-  right: 10px;
-  margin-right: 30px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.loader__spinner::after {
+  animation: spin 3s 500ms forwards linear;
+  border: solid 15px transparent;
+  border-radius: 50%;
+  border-right-color: #99E2D0;
+  border-top-color: #99E2D0;
+  box-sizing: border-box;
+  content: "";
+  z-index: 3;
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  opacity: 0;
 }
 
+@keyframes spin {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(540deg);
+    opacity: 1;
+  }
+  80% {
+    transform: rotate(576deg);
+    opacity: 0.5;
+  }
+  90% {
+    transform: rotate(648deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(720deg);
+    opacity: 0;
+    display: none;
+  }
+}
+/*Création et animation du background du loading spinner */
+.loader__ecran {
+  background: rgba(153, 226, 208, 0.6);
+  background-size: cover;
+  width: 100%;
+  height: 250%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  transform-origin: top;
+  transform: scale(0);
+  animation: ecran 3s;
+}
+
+@keyframes ecran {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  60% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  70% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  90% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+    display: none;
+  }
+}
+/*Animation de la page à afficher après le load spinner */
+#pagetoload {
+  z-index: 3;
+  opacity: 1;
+  animation: page 2s 2s both;
+}
+
+@keyframes page {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .nomrestaurant {
   display: flex;
   max-width: 100%;
@@ -95,6 +235,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  font-family: "roboto";
 }
 
 .restmain {
@@ -105,7 +246,6 @@ body {
   width: 100%;
   min-height: 100%;
   position: relative;
-  font-family: "Roboto";
 }
 
 .restheader_image {
@@ -119,18 +259,16 @@ body {
 }
 
 .header {
-  margin-bottom: 0px;
-  margin-right: 60px;
-  margin-left: 60px;
+  flex-direction: column;
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .header_logo {
-  text-align: center;
   justify-content: center;
   display: flex;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
 .restheader__titre {
@@ -144,12 +282,6 @@ body {
   position: relative;
 }
 
-h1 {
-  font-weight: 500;
-  font-family: "Shrikhand", "sans-serif";
-  padding: 20px;
-}
-
 .plat_detail {
   background: white;
   padding: 0px 50px 0px 10px;
@@ -160,6 +292,11 @@ h1 {
   display: flex;
   flex-direction: column;
   font-family: "Roboto", "sans-serif";
+}
+
+.plat_detail:hover {
+  background: rgba(147, 86, 220, 0.15);
+  cursor: pointer;
 }
 
 .plat {
@@ -179,120 +316,47 @@ h1 {
   font-weight: bold;
 }
 
-.rotate-scale-up-ver {
-  animation: rotate-scale-up-ver 0.65s linear both;
+.fa-check-circle {
+  color: white;
+  font-size: 1.3rem;
 }
 
-/**
-* ----------------------------------------
-* animation rotate-scale-up-ver
-* ----------------------------------------
-*/
-@-webkit-keyframes rotate-scale-up-ver {
-  0% {
-    transform: scale(1) rotateY(0);
-  }
-  50% {
-    transform: scale(2) rotateY(180deg);
-  }
-  100% {
-    transform: scale(1) rotateY(360deg);
-  }
-}
-@keyframes rotate-scale-up-ver {
-  0% {
-    transform: scale(1) rotateY(0);
-  }
-  50% {
-    transform: scale(2) rotateY(180deg);
-  }
-  100% {
-    transform: scale(1) rotateY(360deg);
-  }
-}
-/*animation coeur*/
-.heart1 {
-  position: relative;
+.item-icon {
+  position: absolute;
+  right: 15px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  display: flex;
-  padding: 30px;
+  padding: 20px;
+  height: 45PX;
+  width: 30PX;
 }
 
-.heart1 .fa-heart {
-  position: absolute;
-  background: white;
-  font-size: 2rem;
-}
-
-.heart1 .fa-gradient {
-  color: grey;
-  background-color: #eaecec;
-}
-
-.heart1 .fa-gradient:hover::before {
+.item-icon :hover {
   cursor: pointer;
-  font-weight: bold;
-  animation: backgroundtwo 4s ease-in-out;
-  background: linear-gradient(#9356dc, #fa79da);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.heart {
   position: absolute;
-  box-sizing: border-box;
-  right: 10%;
+  background: #99e2d0;
   display: flex;
-  top: 187px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 45px;
   width: 30px;
-  height: 10px;
+  box-shadow: 2px 2px 5px 2px #dddddd;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: 1s background-color 250ms;
 }
 
-.heart .fa-heart {
+span.detail_prix {
+  right: 30px;
   position: absolute;
-  background: white;
-  font-size: 2rem;
+  width: 30px;
 }
 
-.heart .fa-gradient {
-  color: grey;
-  background-color: #eaecec;
-}
-
-.heart .fa-gradient:hover::before {
+span.detail_prix:hover {
   cursor: pointer;
-  font-weight: bold;
-  animation: backgroundtwo 4s ease-in-out;
-  background: linear-gradient(#9356dc, #fa79da);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* on stylise le label faire le fond */
-label {
-  display: block;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  background-color: #99e2d0;
-  border-radius: 0 20px 20px 0;
-  margin-left: 90%;
-  margin-bottom: 80pxpx;
-  position: relative;
-}
-
-label::after {
-  content: "";
-  display: block;
-  position: relative;
-  top: 5px;
-  left: 40px;
-  height: 40px;
-  background-color: red;
-  border-radius: 0 20px 20px 0;
-  transition: all 0.4s ease-out;
+  right: 80px;
 }
 
 a {
@@ -322,17 +386,60 @@ a {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   margin-bottom: 20px;
+  font-family: "roboto";
 }
 
-.restaurant-plat1-menu {
+.restaurantcarte .restaurant-plat1-menu {
   box-shadow: 2px 4px 8px 3px #dadade;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  padding-top: 20px;
-  padding-left: 20px;
   background: white;
-  padding-bottom: 20px;
-  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.restaurantcarte .restaurant-plat1-menu .titre {
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.restaurant-plat1-menu .titre h2 {
+  padding: 0;
+  margin: 0 0 5px 0;
+}
+
+.restaurant-plat1-menu .titre h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.restaurant-plat1-menu .action {
+  position: relative;
+  align-self: flex-start;
+  padding: 15px;
+  font-size: 2, 5em;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.nomrestaurant .action {
+  position: relative;
+  align-self: flex-start;
+  padding: 30px;
+  font-size: 2, 5em;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.action .far {
+  position: absolute;
+  transition: all 0.25s linear;
+  overflow: hidden;
+  background: linear-gradient(#FF79DA, #9356DC);
+  font-size: 20px;
 }
 
 .nav-h2 {
@@ -367,6 +474,7 @@ a {
   justify-content: flex-end;
   align-items: baseline;
   position: relative;
+  object-fit: cover;
 }
 
 .image-note {
@@ -464,16 +572,16 @@ a {
   font-family: "Roboto";
 }
 
+.fonct__option:hover {
+  background: rgba(147, 86, 220, 0.15);
+  cursor: pointer;
+}
+
 .option__icon {
   text-align: center;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-/* cache linput de base */
-input checkbox {
-  display: none;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
