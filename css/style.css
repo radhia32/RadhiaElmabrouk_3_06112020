@@ -219,69 +219,7 @@ ul {
     opacity: 1;
   }
 }
-.nomrestaurant {
-  display: flex;
-  max-width: 100%;
-  position: relative;
-}
-
-.nomrestaurant h2 {
-  font-family: "Shrikhand";
-}
-
-body {
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  font-family: "roboto";
-}
-
-.restmain {
-  margin-top: -100px;
-  background-color: #eaecec;
-  border-radius: 45px 45px 0px 0px;
-  z-index: 1;
-  width: 100%;
-  min-height: 100%;
-  position: relative;
-}
-
-.restheader_image {
-  max-width: 100%;
-  background-image: url(../image/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  background-size: cover;
-  width: 100%;
-  font-size: 23px;
-  max-width: 100%;
-  position: relative;
-}
-
-.header {
-  flex-direction: column;
-  display: flex;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-.header_logo {
-  justify-content: center;
-  display: flex;
-  text-align: center;
-}
-
-.restheader__titre {
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 50px 50px 0px 0px;
-  background-color: #f6f6f6;
-  margin-top: 20px;
-  font-family: "Shrikhand", "sans-serif";
-  font-size: 23px;
-  position: relative;
-}
-
+/*ANIMATION DES MENUS */
 .plat_detail {
   background: white;
   padding: 0px 50px 0px 10px;
@@ -352,11 +290,108 @@ span.detail_prix {
   right: 30px;
   position: absolute;
   width: 30px;
+  opacity: 1;
 }
 
 span.detail_prix:hover {
   cursor: pointer;
-  right: 80px;
+  animation: slideLeft 1s both;
+  transition: 0.5s;
+}
+
+/*ANIMATION COEUR DE LA PAGE PRINCIPALE */
+.action.far {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.action .fas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: linear-gradient(#FF79DA, #9356DC);
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+
+.action .fas:hover .far {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.action .far:hover {
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.action {
+  position: relative;
+  align-self: flex-start;
+  padding: 30px;
+  font-size: 1, 5em;
+  cursor: pointer;
+}
+
+.restaurant-plat1-menu .action {
+  position: relative;
+  align-self: flex-start;
+  padding: 15px;
+  font-size: 1, 5em;
+  cursor: pointer;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "roboto";
+}
+
+.restmain {
+  margin-top: -100px;
+  background-color: #eaecec;
+  border-radius: 45px 45px 0px 0px;
+  z-index: 1;
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+.restheader_image {
+  max-width: 100%;
+  background-image: url(../image/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  width: 100%;
+  font-size: 23px;
+  position: relative;
+}
+
+.header {
+  flex-direction: column;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.header_logo {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.restheader__titre {
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px 50px 0px 0px;
+  background-color: #f6f6f6;
+  margin-top: 20px;
+  font-family: "Shrikhand", "sans-serif";
+  font-size: 23px;
+  position: relative;
 }
 
 a {
@@ -416,30 +451,14 @@ a {
   font-weight: normal;
 }
 
-.restaurant-plat1-menu .action {
+.nomrestaurant {
+  display: flex;
+  max-width: 100%;
   position: relative;
-  align-self: flex-start;
-  padding: 15px;
-  font-size: 2, 5em;
-  overflow: hidden;
-  cursor: pointer;
 }
 
-.nomrestaurant .action {
-  position: relative;
-  align-self: flex-start;
-  padding: 30px;
-  font-size: 2, 5em;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.action .far {
-  position: absolute;
-  transition: all 0.25s linear;
-  overflow: hidden;
-  background: linear-gradient(#FF79DA, #9356DC);
-  font-size: 20px;
+.nomrestaurant h2 {
+  font-family: "Shrikhand";
 }
 
 .nav-h2 {

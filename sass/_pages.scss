@@ -24,7 +24,6 @@ body {
     background-size: cover;
     width: 100%;
     font-size: 23px;
-    max-width: 100%;
     position:relative;
 }  
 
@@ -54,88 +53,6 @@ body {
     position: relative;
 }
 
-.plat_detail{
-
-    background:white;
-    padding: 0px 50px 0px 10px;
-    margin: 15px;
-    box-shadow: 2px 2px 5px 2px #dddddd;
-    border-radius: 15px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Roboto', 'sans-serif'; 
-}
-
-.plat_detail:hover{
-    background: rgba(147, 86, 220, 0.15);
-    cursor: pointer;
-}
-
-.plat{
-
-    border-bottom: 3px solid #99E2D0;
-    padding-top: 6px;
-}
-.menu-nouveau{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    background-color: #99e2d0;
-    color: #58a492;
-    width: 20%;
-    margin: 15px;
-    border-radius: 7px;
-    font-weight: bold;  
-}
-
-.fa-check-circle{
-  
-    color:white;
-    font-size: 1.3rem;
-}
-.item-icon{
-
-    position: absolute;
-    right: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    height: 45PX;
-    width: 30PX;
-}
-
-.item-icon :hover{
-    cursor: pointer;
-    position: absolute;
-    background: #99e2d0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    height: 45px;
-    width: 30px;
-    box-shadow: 2px 2px 5px 2px #dddddd;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    transition: 1s  background-color 250ms;
-    
-    }
-       
-span.detail_prix {
-    right: 30px; 
-    position: absolute;
-    width: 30px; 
- 
-}
-
-span.detail_prix:hover{
-   
-  cursor: pointer;
-  right: 80px; 
-  
-}
 
  
 

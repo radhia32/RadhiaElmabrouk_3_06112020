@@ -1,8 +1,9 @@
 
-@import'./_base.scss';
-@import'./_variables.scss';
-@import'./_pages.scss';
-@import'./_medias-queries.scss';
+@import'_base.scss';
+@import'_animation.scss';
+@import'_pages.scss';
+@import'_medias-queries';
+
 
 
 a{
@@ -70,33 +71,20 @@ a{
     font-weight:normal ;
   }
 
-.restaurant-plat1-menu .action{
 
-  position:relative;
-  align-self: flex-start;
-  padding: 15px; 
-  font-size: 2,5em;
-  overflow: hidden;
- cursor: pointer;
 
+.nomrestaurant{
+  display: flex;
+  max-width: 100%;
+  position: relative;
 }
-.nomrestaurant .action{
 
-  position:relative;
-  align-self: flex-start;
-  padding: 30px; 
-  font-size: 2,5em;
-  overflow: hidden;
- cursor: pointer;
+.nomrestaurant h2{
 
+      font-family: "Shrikhand";
 }
-   .action .far{
-    position:absolute;
-    transition: all .25s linear;
-    overflow: hidden;
-    background: linear-gradient(#FF79DA, #9356DC);
-    font-size: 20px;
-  }
+
+
 
   .nav-h2{
   margin: 20px 20px 20px; 

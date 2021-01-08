@@ -1,0 +1,279 @@
+
+.loader__spinner  {
+    z-index: 3;
+    animation: spin 3s forwards linear;
+    border: solid 15px transparent;
+    border-radius: 50%;
+    border-right-color: #9356DC;
+    border-top-color: #9356DC;
+    box-sizing: border-box;
+    height: 150px;
+    width: 150px;
+    position: fixed;
+    left: calc(50% - 75px);
+    top: calc(50% - 75px);
+    opacity: 0;
+
+    &::before {
+        animation: spin 3s 250ms forwards linear;
+        border: solid 15px transparent;
+        border-radius: 50%;
+        border-right-color: #FF79DA;
+        border-top-color: #FF79DA;
+        box-sizing: border-box;
+        content: "";
+        z-index: 3;
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+
+    &::after {
+        animation: spin 3s 500ms forwards linear;
+        border: solid 15px transparent;
+        border-radius: 50%;
+        border-right-color: #99E2D0;
+        border-top-color: #99E2D0;
+        box-sizing: border-box;
+        content: "";
+        z-index: 3;
+        height: 90px;
+        width: 90px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        opacity: 0;
+  }
+  }
+  
+  @keyframes spin {
+    5% {
+        opacity: 1;
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(540deg);
+        opacity: 1;
+    }
+    80% {
+        transform: rotate(576deg);
+        opacity: 0.5;
+    }
+    90% {
+        transform: rotate(648deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(720deg);
+        opacity: 0;
+        display: none;
+    }
+  }
+  
+  /*Création et animation du background du loading spinner */
+  .loader__ecran {
+    background: rgba(153, 226, 208, 0.6);
+    background-size: cover;
+    width: 100%;
+    height: 250%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    transform-origin:top;
+    transform: scale(0);
+    animation: ecran 3s;
+  }
+  @keyframes ecran {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+     60% {
+        opacity: 0.9;
+        transform: scale(1);
+    }
+     70% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    90% {
+        opacity: 0.7;
+        transform: scale(1);
+    }100% {
+        opacity: 0;
+        transform: scale(0);
+        display: none;
+    }
+  } 
+  
+  /*Animation de la page à afficher après le load spinner */
+  
+  #pagetoload {
+    z-index: 3;
+    opacity: 1;
+    animation: page 2s 2s both;
+  }
+  
+  @keyframes page {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+  } 
+
+  /*ANIMATION DES MENUS */
+  
+  .plat_detail{
+
+    background:white;
+    padding: 0px 50px 0px 10px;
+    margin: 15px;
+    box-shadow: 2px 2px 5px 2px #dddddd;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', 'sans-serif'; 
+}
+
+.plat_detail:hover{
+    background: rgba(147, 86, 220, 0.15);
+    cursor: pointer;
+}
+
+.plat{
+
+    border-bottom: 3px solid #99E2D0;
+    padding-top: 6px;
+}
+.menu-nouveau{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #99e2d0;
+    color: #58a492;
+    width: 20%;
+    margin: 15px;
+    border-radius: 7px;
+    font-weight: bold;  
+}
+
+.fa-check-circle{
+  
+    color:white;
+    font-size: 1.3rem;
+}
+.item-icon{
+
+    position: absolute;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 45PX;
+    width: 30PX;
+}
+
+.item-icon :hover{
+    cursor: pointer;
+    position: absolute;
+    background: #99e2d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 45px;
+    width: 30px;
+    box-shadow: 2px 2px 5px 2px #dddddd;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: 1s  background-color 250ms;
+    
+    }
+       
+span.detail_prix {
+    right: 30px; 
+    position: absolute;
+    width: 30px; 
+    opacity: 1;
+ 
+}
+
+span.detail_prix:hover{
+   
+  cursor: pointer; 
+  animation: slideLeft 1s both;
+  transition: 0.5s;
+}
+
+  /*ANIMATION COEUR DE LA PAGE PRINCIPALE */
+
+  .action.far{
+    position:relative;
+    z-index:1;
+    cursor: pointer;
+
+  }
+.action .fas{
+
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+    background: linear-gradient(#FF79DA, #9356DC);
+    opacity:0;
+    transform: scale(0);
+    transition:.3s ease;
+}
+  
+.action .fas:hover .far{
+    transform:scale(1);
+    opacity:1;
+}
+.action .far:hover{
+    background: linear-gradient(#FF79DA, #9356DC);
+
+}
+
+
+  .action {
+  
+    position:relative;
+    align-self: flex-start;
+    padding: 30px; 
+    font-size: 1,5em;
+    cursor: pointer;
+  
+  }
+  
+  .restaurant-plat1-menu .action {
+  
+    position:relative;
+    align-self: flex-start;
+    padding: 15px; 
+    font-size: 1,5em;
+    cursor: pointer;
+  
+  }
+  
+ 
+  
+
+
+  
+  
+
+
