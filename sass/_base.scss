@@ -65,21 +65,43 @@ h1 {
   margin-bottom: 5px;
   }
 
-  p.presentation-dexp{
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  .presentation-dexp{
+    margin-top: 4px;
+    font-size: .9rem;
+    margin:20px;
+    
   }
 
-  p {
-  margin-top: 5px;
-  font-size: .9rem;
-  width: 70%;
-  white-space: nowrap;
-  
+  .present h2{
+
+    padding-left: 0px;
+   
+
+  }
+
+p.menu-nouveau{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
+    margin: 15px;
+    border-radius: 3px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 86px;
 
 }
+
+
+.plat_detail h3,  p.titreplat{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
    .footer__icon {
       margin-right: 10px;
        width: 3%;

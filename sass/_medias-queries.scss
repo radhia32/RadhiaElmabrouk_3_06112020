@@ -1,8 +1,134 @@
 
+@media screen and (min-width: 810px) {
+
+main{
+    justify-content: center;
+    max-width: 950px;
+    flex-direction: column;
+    display: flex;
+    align-self: center;
+    margin: auto;
+
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    width: 100%;
+}
+
+  .header{
+
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 65%;
+
+  }
 
 
+  section.present{
+
+    padding-bottom: 20px;
+  }
+
+  .option-global {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.nav h2{
+
+    font-size: 2em;
+}
+
+.fonct__option{
+
+    padding-right: 40px;
+    padding-left: 40px;
+
+}
+
+.footer{
+
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+section.present{
+
+padding-bottom: 40px;
+}
+
+img{
+
+width: 60%;
+margin-top: 40px;
+margin-bottom: 40px;
 
 
+}
+
+.restaurantcartes{
+
+width: 100%;
+display: flex;
+justify-content: center;
+align-content:space-around;
+flex-wrap: wrap;
+}
+
+#restaurant{
+
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+
+}
+.restaurantcarte{
+
+    width: 40%;
+    margin:30px;
+}
+
+h2.footer__titre{
+
+    font-size: 40px;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+}    
+
+.footer__menu{  
+
+display: flex;
+justify-content: space-between;
+width: 85%;
+font-size: 20px;
+
+}
 
 
+.restheader_image{
+object-fit:cover;
+}
+
+
+.option.fonct__option{
+
+   margin-right:25px; 
+   margin-left: 25px;
+   
+}
+
+}
 

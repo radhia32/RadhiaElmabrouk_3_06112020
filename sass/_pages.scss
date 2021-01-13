@@ -29,10 +29,12 @@ body {
 
 .header {
    
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     display: flex;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 0;
+    margin-right: 80px;
 }
 
 .header_logo{
@@ -54,8 +56,14 @@ body {
 }
 
 
- 
+.retour{
 
+    width: 80%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+
+}
 
 
 

@@ -133,121 +133,33 @@
     }
   } 
 
-  /*ANIMATION DES MENUS */
-  
-  .plat_detail{
 
-    background:white;
-    padding: 0px 50px 0px 10px;
-    margin: 15px;
-    box-shadow: 2px 2px 5px 2px #dddddd;
-    border-radius: 15px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Roboto', 'sans-serif'; 
-}
 
-.plat_detail:hover{
-    background: rgba(147, 86, 220, 0.15);
-    cursor: pointer;
-}
 
-.plat{
+.action:hover .fas{
 
-    border-bottom: 3px solid #99E2D0;
-    padding-top: 6px;
-}
-.menu-nouveau{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    background-color: #99e2d0;
-    color: #58a492;
-    width: 20%;
-    margin: 15px;
-    border-radius: 7px;
-    font-weight: bold;  
-}
-
-.fa-check-circle{
-  
-    color:white;
-    font-size: 1.3rem;
-}
-.item-icon{
-
-    position: absolute;
-    right: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    height: 45PX;
-    width: 30PX;
-}
-
-.item-icon :hover{
-    cursor: pointer;
-    position: absolute;
-    background: #99e2d0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    height: 45px;
-    width: 30px;
-    box-shadow: 2px 2px 5px 2px #dddddd;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    transition: 1s  background-color 250ms;
-    
-    }
-       
-span.detail_prix {
-    right: 30px; 
-    position: absolute;
-    width: 30px; 
-    opacity: 1;
- 
-}
-
-span.detail_prix:hover{
-   
-  cursor: pointer; 
-  animation: slideLeft 1s both;
-  transition: 0.5s;
-}
-
-  /*ANIMATION COEUR DE LA PAGE PRINCIPALE */
-
-  .action.far{
-    position:relative;
-    z-index:1;
-    cursor: pointer;
-
-  }
-.action .fas{
-
-    position:absolute;
-    left:0;
-    top:0;
-    z-index:-1;
+    display: block;
     background: linear-gradient(#FF79DA, #9356DC);
-    opacity:0;
-    transform: scale(0);
-    transition:.3s ease;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
-  
-.action .fas:hover .far{
-    transform:scale(1);
-    opacity:1;
+
+.action:hover .far{ 
+
+    display: none;
 }
-.action .far:hover{
-    background: linear-gradient(#FF79DA, #9356DC);
+
+.action .fas {
+
+    display: none;
 
 }
 
+.action .far{
+
+    display: block;
+}
 
   .action {
   
@@ -268,12 +180,127 @@ span.detail_prix:hover{
     cursor: pointer;
   
   }
+
+  .plat_detail{
+
+    background:white;
+    padding: 0px 50px 0px 10px;
+    margin: 15px;
+    box-shadow: 2px 2px 5px 2px #dddddd;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', 'sans-serif'; 
+    text-overflow: ellipsis;
   
+}
+
+.plat_detail:hover{
+
+    cursor: pointer;
+    background: rgba(147, 86, 220, 0.15);
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+    .plat{
+
+    border-bottom: 3px solid #99E2D0;
+    padding-top: 6px;
+    }
+
+
+    span.detail_prix {
+    right: 30px; 
+    position: absolute;
+    cursor: pointer;
+    opacity: 1;
+  
+    }
+
+     .menu :hover span.detail_prix {
+
+        cursor: pointer;
+        width: 20%;
+       
+     }
+
+    .fa-check-circle{
+
+    color:white;
+    font-size: 1.3rem;
+    }
+    
+    .item-icon {
+        cursor: pointer;
+        background-color: #99E2D0;
+        display: flex;
+        align-items: center;
+       justify-content: center;
+        width: 0%;
+        position: absolute;
+        right: 15px;
+        height: 95PX;
+        border-radius: 0 15px 15px 0px;
+        box-shadow: 2px 2px 5px 2px #dddddd;
+        transition: 1s;
+          
+        }
+    
+    .item-icon .fa-check-circle {
+        opacity: 0;
+        color: white;
+        font-size: 1.2rem;
+        transform: rotate(180deg);
+        transition: .8s;
+    }
+
+      .menu:hover .check-icon{     
+      transform: rotate(-360deg);
+    } 
  
+    .menu:hover .item-icon {
+        width: 15%;
+      }
+
+      .menu:hover .fa-check-circle{
+
+        transform: rotate(0deg);
+        opacity: 1;
+      }
   
+/* Création de l'animation du menu à l'arrivée sur la page */
+
+.menu{
+
+    animation: entreepage 700ms both ease-in-out;
+}
+
+.menu{
+
+    animation: revelation 700ms 400ms both ease-in-out;
+}
+
+.menu{
+
+    animation: revelation 700ms 800ms both ease-in-out;
+}
 
 
-  
-  
+@keyframes revelation {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+
+    
+
+  
 
