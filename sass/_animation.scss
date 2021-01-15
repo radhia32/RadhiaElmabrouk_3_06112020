@@ -181,6 +181,12 @@
   
   }
 
+  .menutotale{
+
+    overflow: hidden;
+    height: auto;
+  }
+
   .plat_detail{
 
     background:white;
@@ -203,6 +209,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
 
     .plat{
 
@@ -237,14 +244,14 @@
         background-color: #99E2D0;
         display: flex;
         align-items: center;
-       justify-content: center;
+        justify-content: center;
         width: 0%;
         position: absolute;
         right: 15px;
         height: 95PX;
         border-radius: 0 15px 15px 0px;
         box-shadow: 2px 2px 5px 2px #dddddd;
-        transition: 1s;
+        transition: transform 300ms 100ms linear;
           
         }
     
@@ -254,10 +261,12 @@
         font-size: 1.2rem;
         transform: rotate(180deg);
         transition: .8s;
+        
     }
 
       .menu:hover .check-icon{     
-      transform: rotate(-360deg);
+      transform: rotate(360deg);
+      
     } 
  
     .menu:hover .item-icon {

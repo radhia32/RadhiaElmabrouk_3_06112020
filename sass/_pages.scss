@@ -27,14 +27,26 @@ body {
     position:relative;
 }  
 
-.header {
-   
+.header{
+
+    text-align: center;
     justify-content: center;
     align-items: center;
     display: flex;
     margin-top: 20px;
     margin-left: 0;
-    margin-right: 80px;
+
+}
+
+.headermenu {
+   
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 0;
+   
 }
 
 .header_logo{

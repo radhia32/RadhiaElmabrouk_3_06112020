@@ -47,7 +47,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   padding-left: 30px;
   padding-top: 20px;
   margin-top: 0;
@@ -272,6 +272,11 @@ ul {
   cursor: pointer;
 }
 
+.menutotale {
+  overflow: hidden;
+  height: auto;
+}
+
 .plat_detail {
   background: white;
   padding: 0px 50px 0px 10px;
@@ -326,7 +331,7 @@ span.detail_prix {
   height: 95PX;
   border-radius: 0 15px 15px 0px;
   box-shadow: 2px 2px 5px 2px #dddddd;
-  transition: 1s;
+  transition: transform 300ms 100ms linear;
 }
 
 .item-icon .fa-check-circle {
@@ -338,7 +343,7 @@ span.detail_prix {
 }
 
 .menu:hover .check-icon {
-  transform: rotate(-360deg);
+  transform: rotate(360deg);
 }
 
 .menu:hover .item-icon {
@@ -402,12 +407,21 @@ body {
 }
 
 .header {
+  text-align: center;
   justify-content: center;
   align-items: center;
   display: flex;
   margin-top: 20px;
   margin-left: 0;
-  margin-right: 80px;
+}
+
+.headermenu {
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 0;
 }
 
 .header_logo {
@@ -434,33 +448,25 @@ body {
   align-items: center;
 }
 
-@media screen and (min-width: 810px) {
-  main {
-    justify-content: center;
-    max-width: 950px;
-    flex-direction: column;
-    display: flex;
-    align-self: center;
-    margin: auto;
-  }
-
-  body {
-    padding: 0px;
-    margin: 0px;
-    justify-content: center;
-    width: 100%;
-  }
-
+/* Responsive page home */
+@media screen and (min-width: 768px) {
   .header {
     text-align: center;
     justify-content: center;
     align-content: center;
     align-items: center;
-    width: 65%;
+    width: 100%;
+    font-size: 40PX;
+    margin-top: 0px;
   }
 
   section.present {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .nav_h2 {
+    font-size: 2em;
   }
 
   .option-global {
@@ -470,31 +476,25 @@ body {
     align-items: flex-end;
     margin-bottom: 40px;
     margin-top: 30px;
+    flex-wrap: wrap;
   }
 
-  .nav h2 {
-    font-size: 2em;
-  }
-
-  .fonct__option {
+  .option.fonct__option {
+    margin-right: 25px;
+    margin-left: 25px;
     padding-right: 40px;
     padding-left: 40px;
   }
 
-  .footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  #restaurant {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
-  section.present {
-    padding-bottom: 40px;
-  }
-
-  img {
-    width: 60%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  h2.title {
+    font-size: 2em;
   }
 
   .restaurantcartes {
@@ -505,16 +505,15 @@ body {
     flex-wrap: wrap;
   }
 
-  #restaurant {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
   .restaurantcarte {
     width: 40%;
     margin: 30px;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
   h2.footer__titre {
@@ -531,13 +530,122 @@ body {
     font-size: 20px;
   }
 
+  /* Responsive 4 page  */
+  .headermenu {
+    width: 100%;
+  }
+
   .restheader_image {
     object-fit: cover;
+  }
+
+  .header_logo {
+    text-align: center;
+    display: flex;
+    position: absolute;
+  }
+
+  .retour {
+    width: 100%;
+  }
+
+  .header {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 40PX;
+    margin-top: 0px;
+  }
+
+  section.present {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .nav_h2 {
+    font-size: 2em;
+  }
+
+  .option-global {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
   }
 
   .option.fonct__option {
     margin-right: 25px;
     margin-left: 25px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  #restaurant {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  h2.title {
+    font-size: 2em;
+  }
+
+  .restaurantcartes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .restaurantcarte {
+    width: 40%;
+    margin: 30px;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h2.footer__titre {
+    font-size: 40px;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__menu {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    font-size: 20px;
+  }
+
+  /* Responsive 4 page  */
+  .headermenu {
+    width: 100%;
+  }
+
+  .restheader_image {
+    object-fit: cover;
+  }
+
+  .header_logo {
+    text-align: center;
+    display: flex;
+    position: absolute;
+  }
+
+  .retour {
+    width: 100%;
   }
 }
 a {

@@ -1,22 +1,8 @@
 
-@media screen and (min-width: 810px) {
+/* Responsive page home */
 
-main{
-    justify-content: center;
-    max-width: 950px;
-    flex-direction: column;
-    display: flex;
-    align-self: center;
-    margin: auto;
+@media screen and (min-width: 768px) {
 
-}
-
-body{
-    padding: 0px;
-    margin: 0px;
-    justify-content: center;
-    width: 100%;
-}
 
   .header{
 
@@ -24,15 +10,23 @@ body{
     justify-content: center;
     align-content: center;
     align-items: center;
-    width: 65%;
+    width: 100%;
+    font-size: 40PX;
+    margin-top: 0px;
 
   }
 
+    section.present{
 
-  section.present{
+        padding-bottom: 40px;
+        padding-top: 40px;
+        }
+  
 
-    padding-bottom: 20px;
-  }
+  .nav_h2{
+
+    font-size: 2em;
+}
 
   .option-global {
 
@@ -42,63 +36,53 @@ body{
     align-items: flex-end;
     margin-bottom: 40px;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 
-.nav h2{
 
-    font-size: 2em;
-}
+.option.fonct__option{
 
-.fonct__option{
-
+    margin-right:25px; 
+    margin-left: 25px;
     padding-right: 40px;
     padding-left: 40px;
+ }
+#restaurant{
 
-}
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    }
+
+
+h2.title{
+
+    font-size: 2em;;
+  }
+
+  .restaurantcartes{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content:space-around;
+    flex-wrap: wrap;
+    }
+
+    .restaurantcarte{
+
+        width: 40%;
+        margin:30px;
+    }
 
 .footer{
 
-width: 100%;
-display: flex;
-justify-content: space-between;
-}
-
-section.present{
-
-padding-bottom: 40px;
-}
-
-img{
-
-width: 60%;
-margin-top: 40px;
-margin-bottom: 40px;
-
-
-}
-
-.restaurantcartes{
-
-width: 100%;
-display: flex;
-justify-content: center;
-align-content:space-around;
-flex-wrap: wrap;
-}
-
-#restaurant{
-
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
-flex-wrap: wrap;
-
-}
-.restaurantcarte{
-
-    width: 40%;
-    margin:30px;
-}
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    }
 
 h2.footer__titre{
 
@@ -117,17 +101,154 @@ font-size: 20px;
 
 }
 
+/* Responsive 4 page  */
+
+.headermenu{
+
+    width: 100%;
+}
+
 
 .restheader_image{
 object-fit:cover;
 }
 
+.header_logo{
+
+    text-align: center; 
+    display: flex;
+    position: absolute;
+}
+
+.retour{
+
+    width: 100%;
+}
+
+@media screen and (min-width:992px){
+
+
+}
+
+  .header{
+
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 40PX;
+    margin-top: 0px;
+
+  }
+
+    section.present{
+
+        padding-bottom: 40px;
+        padding-top: 40px;
+        }
+  
+
+  .nav_h2{
+
+    font-size: 2em;
+}
+
+  .option-global {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
 
 .option.fonct__option{
 
-   margin-right:25px; 
-   margin-left: 25px;
-   
+    margin-right:25px; 
+    margin-left: 25px;
+    padding-right: 40px;
+    padding-left: 40px;
+ }
+#restaurant{
+
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    }
+
+
+h2.title{
+
+    font-size: 2em;;
+  }
+
+  .restaurantcartes{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content:space-around;
+    flex-wrap: wrap;
+    }
+
+    .restaurantcarte{
+
+        width: 40%;
+        margin:30px;
+    }
+
+.footer{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    }
+
+h2.footer__titre{
+
+    font-size: 40px;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+}    
+
+.footer__menu{  
+
+display: flex;
+justify-content: space-between;
+width: 85%;
+font-size: 20px;
+
+}
+
+/* Responsive 4 page  */
+
+.headermenu{
+
+    width: 100%;
+}
+
+
+.restheader_image{
+object-fit:cover;
+}
+
+.header_logo{
+
+    text-align: center; 
+    display: flex;
+    position: absolute;
+}
+
+.retour{
+
+    width: 100%;
 }
 
 }
