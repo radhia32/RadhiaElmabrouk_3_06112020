@@ -133,9 +133,6 @@
     }
   } 
 
-
-
-
 .action:hover .fas{
 
     display: block;
@@ -153,7 +150,6 @@
 .action .fas {
 
     display: none;
-
 }
 
 .action .far{
@@ -183,7 +179,6 @@
 
   .menutotale{
 
-    overflow: hidden;
     height: auto;
   }
 
@@ -194,22 +189,20 @@
     margin: 15px;
     box-shadow: 2px 2px 5px 2px #dddddd;
     border-radius: 15px;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', 'sans-serif'; 
+    overflow: hidden;
     text-overflow: ellipsis;
-  
+   
 }
 
 .plat_detail:hover{
 
     cursor: pointer;
     background: rgba(147, 86, 220, 0.15);
-    text-overflow: ellipsis;
-    overflow: hidden;
+   
 }
-
 
     .plat{
 
@@ -221,15 +214,16 @@
     span.detail_prix {
     right: 30px; 
     position: absolute;
-    cursor: pointer;
     opacity: 1;
+    font-weight: 700;
   
     }
 
-     .menu :hover span.detail_prix {
+     .plat_detail:hover span.detail_prix {
 
-        cursor: pointer;
+        
         width: 20%;
+        transition:1s;
        
      }
 
@@ -240,7 +234,7 @@
     }
     
     .item-icon {
-        cursor: pointer;
+    
         background-color: #99E2D0;
         display: flex;
         align-items: center;
@@ -251,33 +245,66 @@
         height: 95PX;
         border-radius: 0 15px 15px 0px;
         box-shadow: 2px 2px 5px 2px #dddddd;
-        transition: transform 300ms 100ms linear;
+        transition: 1s;
           
         }
+
+        .nomplat{
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+
+        p.titreplat {
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: lighter;
     
+        }
+        
+        .nomplat:hover p.titreplat {
+
+            width:80%;
+            cursor: pointer;  
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+        }
+
+        
     .item-icon .fa-check-circle {
         opacity: 0;
         color: white;
         font-size: 1.2rem;
         transform: rotate(180deg);
-        transition: .8s;
+        transition-property: all;
+        transition-duration: 0.8s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
         
     }
 
-      .menu:hover .check-icon{     
-      transform: rotate(360deg);
-      
+      .plat_detail:hover .check-icon{     
+      transform: rotate(-360deg);
+
     } 
  
-    .menu:hover .item-icon {
+    .plat_detail:hover .item-icon {
         width: 15%;
       }
 
-      .menu:hover .fa-check-circle{
+      .plat_detail:hover .fa-check-circle{
 
         transform: rotate(0deg);
         opacity: 1;
       }
+
+     
   
 /* Création de l'animation du menu à l'arrivée sur la page */
 

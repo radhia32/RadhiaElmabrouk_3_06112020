@@ -3,8 +3,8 @@
 @import'_animation.scss';
 @import'_pages.scss';
 @import'_medias-queries';
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
 
 a{
 
@@ -18,7 +18,7 @@ a{
 
   }
  
-  .restaurant-plat2-ville{
+ .restaurant-plat2-ville{
       margin:auto;
   }
 
@@ -37,7 +37,7 @@ a{
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     margin-bottom: 20px;
-   font-family: "roboto";
+  font-family: 'Roboto', sans-serif;
   }
 
   .restaurantcarte .restaurant-plat1-menu{
@@ -68,7 +68,7 @@ a{
 
     margin:0;
     padding:0;
-    font-weight:normal ;
+    font-weight: lighter;
   }
 
 
@@ -81,20 +81,20 @@ a{
 
 .nomrestaurant h2{
 
-      font-family: "Shrikhand";
+  font-family: 'Shrikhand', cursive;
 }
 
   .nav-h2{
   margin: 20px 20px 20px; 
   text-align: center;
-  font-family: "Shrikhand", "sans-serif"; 
+  font-family: 'Shrikhand', cursive;
 }
 
   .localisation {
   background: #ededef;
   padding: 1rem 0;
   text-align: center;
-  font-family: shrikhand ;
+  font-family: 'Shrikhand', cursive;
 
 }
 
@@ -176,7 +176,7 @@ a{
     background: linear-gradient(#FF79DA 5%, #9356DC);
     border-radius:30px;
     font-size: 1.1em;
-    width: 50%;
+    width: 60%;
     text-align: center;
     align-items: center;
     cursor:pointer;
@@ -217,7 +217,7 @@ a{
   display: flex ;
   box-shadow: 0 0.7rem 0.7rem 0 #dddddd;
   align-items: center;
-  font-family: "Roboto";  
+  font-family: 'Roboto', sans-serif; 
 }    
 
 .fonct__option:hover {

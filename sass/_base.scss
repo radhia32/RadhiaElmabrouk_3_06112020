@@ -1,10 +1,10 @@
 
-.restaurant {
+  .restaurant {
   background: #f6f6f6;
   padding: 0 1.2rem 3rem;
 }
 
-.option-global{
+  .option-global{
   display: flex;
   flex-direction: column;
  
@@ -13,7 +13,7 @@
     list-style-type: none;
     margin: 10px;
     padding: 10px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "sans-serif";
    
   }
 
@@ -46,12 +46,45 @@ h1 {
   display: flex;
   flex-direction: column;
   font-weight: 500;
-  font-family: "Shrikhand", "sans-serif";
+  font-family: 'Shrikhand', cursive;
   width: 100%;
+} 
+
+
+.nav_h2{
+
+    font-size: 1,9em;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0;
   
+  }
+
+  h2.title{
+
+    font-size: 1.6em;
+    padding-left: 10px;
+    padding-top: 40px;
+    margin-top: 0;
 }
+
+
+
+h2.footer__titre{
+
+  font-family: 'Shrikhand', cursive;
+  font-weight: normal;
+}
+
+h2.footer__heading{
+
+  font-family: 'Shrikhand', cursive;
+  font-weight: normal;
+}
+
   h2 {
-      font-size: 1.2em;
+      
       padding-left: 30px;
       padding-top: 20px;
       margin-top: 0;
@@ -59,12 +92,12 @@ h1 {
 
   h3{
       padding-left: 20px;
+      font-weight: lighter;
     }
 
   h4{
   margin-bottom: 5px;
   }
-
 
   .presentation-dexp{
     margin-top: 4px;
@@ -76,11 +109,10 @@ h1 {
   .present h2{
 
     padding-left: 0px;
-   
-
+  
   }
 
-p.menu-nouveau{
+  p.menu-nouveau{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -90,16 +122,9 @@ p.menu-nouveau{
     border-radius: 3px;
     height: 35px;
     font-size: 18px;
-    font-weight: bold;
     width: 86px;
+    color:lightseagreen;
 
-}
-
-
-.plat_detail h3,  p.titreplat{
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
    .footer__icon {
@@ -109,13 +134,13 @@ p.menu-nouveau{
     }
    
     li {
-  color:white;
-  list-style: none;
+    color:white;
+    list-style: none;
       }
 
-ul{
+  ul{
 
   color:white;
 
-}
+  }
 

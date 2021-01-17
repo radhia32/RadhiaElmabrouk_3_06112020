@@ -13,7 +13,6 @@
     width: 100%;
     font-size: 40PX;
     margin-top: 0px;
-
   }
 
     section.present{
@@ -108,7 +107,6 @@ font-size: 20px;
     width: 100%;
 }
 
-
 .restheader_image{
 object-fit:cover;
 }
@@ -125,8 +123,7 @@ object-fit:cover;
     width: 100%;
 }
 
-@media screen and (min-width:992px){
-
+@media screen and (max:768px){
 
 }
 
