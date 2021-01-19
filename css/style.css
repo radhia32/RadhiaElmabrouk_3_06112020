@@ -18,7 +18,7 @@
   font-family: "Roboto", "sans-serif";
 }
 
-footer {
+.footer {
   background: #313132;
   flex-direction: column;
   display: flex;
@@ -49,7 +49,7 @@ h1 {
 }
 
 .nav_h2 {
-  font-size: 1, 9em;
+  font-size: 1.9em;
   padding-left: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -281,7 +281,7 @@ ul {
   position: relative;
   align-self: flex-start;
   padding: 30px;
-  font-size: 1, 5em;
+  font-size: 1.5em;
   cursor: pointer;
 }
 
@@ -289,7 +289,7 @@ ul {
   position: relative;
   align-self: flex-start;
   padding: 15px;
-  font-size: 1, 5em;
+  font-size: 1.5em;
   cursor: pointer;
 }
 

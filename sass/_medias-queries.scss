@@ -47,48 +47,41 @@
     padding-left: 40px;
  }
 #restaurant{
-
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    
-    }
-
+    flex-wrap: wrap; 
+}
 
 h2.title{
+font-size: 2em;;
+}
 
-    font-size: 2em;;
-  }
+.restaurantcartes{
+width: 100%;
+display: flex;
+justify-content: center;
+align-content:space-around;
+flex-wrap: wrap;
+}
 
-  .restaurantcartes{
-
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content:space-around;
-    flex-wrap: wrap;
-    }
-
-    .restaurantcarte{
-
-        width: 40%;
-        margin:30px;
-    }
+.restaurantcarte{
+    width: 40%;
+    margin:30px;
+}
 
 .footer{
-
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    }
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
 
 h2.footer__titre{
 
-    font-size: 40px;
-    margin: 20px;
-    align-items: center;
-    text-align: center;
+font-size: 40px;
+margin: 20px;
+align-items: center;
+text-align: center;
 }    
 
 .footer__menu{  
@@ -204,47 +197,40 @@ h2.title{
 
     width: 100%;
     display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
     }
 
 h2.footer__titre{
-
-    font-size: 40px;
-    margin: 20px;
-    align-items: center;
-    text-align: center;
+font-size: 40px;
+margin: 20px;
+align-items: center;
+text-align: center;
 }    
 
 .footer__menu{  
-
-display: flex;
-justify-content: space-between;
-width: 85%;
-font-size: 20px;
-
+ display: flex;
+ justify-content: space-between;
+ width: 85%;
+ font-size: 20px;
 }
 
 /* Responsive 4 page  */
 
-.headermenu{
-
+.headermenu{    
     width: 100%;
 }
 
-
 .restheader_image{
-object-fit:cover;
+    object-fit:cover;
 }
 
 .header_logo{
-
     text-align: center; 
     display: flex;
     position: absolute;
 }
 
 .retour{
-
     width: 100%;
 }
 

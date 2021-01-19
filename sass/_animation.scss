@@ -15,37 +15,37 @@
     opacity: 0;
 
     &::before {
-        animation: spin 3s 250ms forwards linear;
-        border: solid 15px transparent;
-        border-radius: 50%;
-        border-right-color: #FF79DA;
-        border-top-color: #FF79DA;
-        box-sizing: border-box;
-        content: "";
-        z-index: 3;
-        height: 120px;
-        width: 120px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        opacity: 0;
+    animation: spin 3s 250ms forwards linear;
+    border: solid 15px transparent;
+    border-radius: 50%;
+    border-right-color: #FF79DA;
+    border-top-color: #FF79DA;
+    box-sizing: border-box;
+    content: "";
+    z-index: 3;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
     }
 
     &::after {
-        animation: spin 3s 500ms forwards linear;
-        border: solid 15px transparent;
-        border-radius: 50%;
-        border-right-color: #99E2D0;
-        border-top-color: #99E2D0;
-        box-sizing: border-box;
-        content: "";
-        z-index: 3;
-        height: 90px;
-        width: 90px;
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        opacity: 0;
+    animation: spin 3s 500ms forwards linear;
+    border: solid 15px transparent;
+    border-radius: 50%;
+    border-right-color: #99E2D0;
+    border-top-color: #99E2D0;
+    box-sizing: border-box;
+    content: "";
+    z-index: 3;
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    opacity: 0;
   }
   }
   
@@ -121,20 +121,19 @@
     animation: page 2s 2s both;
   }
   
-  @keyframes page {
+@keyframes page {
     0% {
         opacity: 0.5;
-    }
+}
     50% {
         opacity: 0.9;
     }
     100% {
         opacity: 1;
     }
-  } 
+} 
 
 .action:hover .fas{
-
     display: block;
     background: linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
@@ -143,47 +142,38 @@
 }
 
 .action:hover .far{ 
-
     display: none;
 }
 
 .action .fas {
-
     display: none;
 }
 
 .action .far{
-
     display: block;
 }
 
-  .action {
-  
+.action {
     position:relative;
     align-self: flex-start;
     padding: 30px; 
-    font-size: 1,5em;
+    font-size: 1.5em;
     cursor: pointer;
-  
   }
   
-  .restaurant-plat1-menu .action {
-  
+.restaurant-plat1-menu .action {
     position:relative;
     align-self: flex-start;
     padding: 15px; 
-    font-size: 1,5em;
+    font-size: 1.5em;
     cursor: pointer;
-  
   }
 
-  .menutotale{
-
+.menutotale{
     height: auto;
   }
 
-  .plat_detail{
-
+.plat_detail{
     background:white;
     padding: 0px 50px 0px 10px;
     margin: 15px;
@@ -198,110 +188,95 @@
 }
 
 .plat_detail:hover{
-
     cursor: pointer;
     background: rgba(147, 86, 220, 0.15);
-   
 }
 
-    .plat{
+.plat{
 
     border-bottom: 3px solid #99E2D0;
     padding-top: 6px;
-    }
+}
 
 
-    span.detail_prix {
+span.detail_prix {
     right: 30px; 
     position: absolute;
     opacity: 1;
     font-weight: 700;
   
-    }
+}
 
-     .plat_detail:hover span.detail_prix {
+.plat_detail:hover span.detail_prix {
+    right: 20%;
+    transition:1s; 
+}
 
-        right: 20%;
-        transition:1s;
-       
-     }
-
-    .fa-check-circle{
-
+.fa-check-circle{
     color:white;
     font-size: 1.3rem;
-    }
+}
     
-    .item-icon {
-    
-        background-color: #99E2D0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 0%;
-        position: absolute;
-        right: 15px;
-        height: 95PX;
-        border-radius: 0 15px 15px 0px;
-        box-shadow: 2px 2px 5px 2px #dddddd;
-        transition: 1s;
+.item-icon {
+    background-color: #99E2D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0%;
+    position: absolute;
+    right: 15px;
+    height: 95PX;
+    border-radius: 0 15px 15px 0px;
+    box-shadow: 2px 2px 5px 2px #dddddd;
+    transition: 1s;
           
-        }
+}
 
-        .nomplat{
+.nomplat{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+ }
 
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-
-        p.titreplat {
-
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-weight: lighter;
-    
-        }
+p.titreplat {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: lighter;
+}
         
-        .nomplat:hover p.titreplat {
-
-            width:80%;
-            cursor: pointer;  
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+.nomplat:hover p.titreplat {
+    width:80%;
+    cursor: pointer;  
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
             
-        }
+}
+   
+.item-icon .fa-check-circle {
+    opacity: 0;
+    color: white;
+    font-size: 1.2rem;
+    transform: rotate(180deg);
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+    transition-delay: 0s; 
+}
 
-        
-    .item-icon .fa-check-circle {
-        opacity: 0;
-        color: white;
-        font-size: 1.2rem;
-        transform: rotate(180deg);
-        transition-property: all;
-        transition-duration: 0.8s;
-        transition-timing-function: ease;
-        transition-delay: 0s;
-        
-    }
-
-      .plat_detail:hover .check-icon{     
+.plat_detail:hover .check-icon{     
       transform: rotate(-360deg);
-
     } 
  
-    .plat_detail:hover .item-icon {
-        width: 15%;
-      }
+.plat_detail:hover .item-icon {
+    width: 15%;
+    }
 
-      .plat_detail:hover .fa-check-circle{
-
-        transform: rotate(0deg);
-        opacity: 1;
-      }
+.plat_detail:hover .fa-check-circle{
+    transform: rotate(0deg);
+    opacity: 1;
+    }
 
      
   
@@ -321,7 +296,6 @@
 
     animation: revelation 700ms 800ms both ease-in-out;
 }
-
 
 @keyframes revelation {
     0% {

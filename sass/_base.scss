@@ -1,118 +1,102 @@
 
-  .restaurant {
+.restaurant {
   background: #f6f6f6;
   padding: 0 1.2rem 3rem;
 }
 
-  .option-global{
+.option-global{
   display: flex;
   flex-direction: column;
- 
 }   
-  .nav{
-    list-style-type: none;
-    margin: 10px;
-    padding: 10px;
-    font-family: "Roboto", "sans-serif";
-   
+
+.nav{
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  font-family: "Roboto", "sans-serif";
   }
 
-  footer{
-
-    background: #313132;
-    flex-direction: column;
-    display: flex;
-    width: 100%; 
-  
+.footer{
+  background: #313132;
+  flex-direction: column;
+  display: flex;
+  width: 100%; 
   }
 
-  .footer a{
-
+.footer a{
   color:white;
   }
 
-  .footer__heading{
-    color: white;
-    margin-left: 25px;
-    padding-bottom: 0px;
+.footer__heading{
+  color: white;
+  margin-left: 25px;
+  padding-bottom: 0px;
   }
   
-  .footer__titre{
+.footer__titre{
   color: white ;
-}
+  }
    
 h1 {
-  margin-left: 50px;
-  display: flex;
-  flex-direction: column;
-  font-weight: 500;
-  font-family: 'Shrikhand', cursive;
-  width: 100%;
+   margin-left: 50px;
+   display: flex;
+   flex-direction: column;
+   font-weight: 500;
+   font-family: 'Shrikhand', cursive;
+   width: 100%;
 } 
 
-
 .nav_h2{
-
-    font-size: 1,9em;
+    font-size: 1.9em;
     padding-left: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 0;
-  
   }
 
-  h2.title{
-
+h2.title{
     font-size: 1.6em;
     padding-left: 10px;
     padding-top: 40px;
     margin-top: 0;
-}
-
-
-
-h2.footer__titre{
-
-  font-family: 'Shrikhand', cursive;
-  font-weight: normal;
-}
-
-h2.footer__heading{
-
-  font-family: 'Shrikhand', cursive;
-  font-weight: normal;
-}
-
-  h2 {
-      
-      padding-left: 30px;
-      padding-top: 20px;
-      margin-top: 0;
-    }
-
-  h3{
-      padding-left: 20px;
-      font-weight: lighter;
-    }
-
-  h4{
-  margin-bottom: 5px;
   }
 
-  .presentation-dexp{
+h2.footer__titre{
+    font-family:'Shrikhand', cursive;
+    font-weight: normal;
+  }
+
+h2.footer__heading{
+    font-family: 'Shrikhand', cursive;
+    font-weight: normal;
+  }
+
+h2 { 
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-top: 0;
+  }
+
+h3{
+    padding-left: 20px;
+    font-weight: lighter;
+  }
+
+h4{
+    margin-bottom: 5px;
+  }
+
+.presentation-dexp{
     margin-top: 4px;
     font-size: .9rem;
     margin:20px;
-    
   }
 
-  .present h2{
-
+.present h2{
     padding-left: 0px;
-  
   }
 
-  p.menu-nouveau{
+p.menu-nouveau{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -124,23 +108,20 @@ h2.footer__heading{
     font-size: 18px;
     width: 86px;
     color:lightseagreen;
+  }
 
-}
-
-   .footer__icon {
-      margin-right: 10px;
-       width: 3%;
-      color:white
+.footer__icon {
+    margin-right: 10px;
+    width: 3%;
+    color:white
     }
    
-    li {
+li {
     color:white;
     list-style: none;
-      }
+    }
 
-  ul{
-
-  color:white;
-
-  }
+ul{
+    color:white;
+    }
 

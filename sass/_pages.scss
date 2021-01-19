@@ -39,42 +39,37 @@ body {
 }
 
 .headermenu {
-   
-    width: 300px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-top: 20px;
-    margin-left: 0;
-   
+width: 300px;
+justify-content: center;
+align-items: center;
+display: flex;
+margin-top: 20px;
+margin-left: 0;
 }
 
 .header_logo{
-
-   justify-content: center;
-    display: flex;
-    text-align: center;    
+ justify-content: center;
+ display: flex;
+ text-align: center;    
 }
 
 .restheader__titre{
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 50px 50px 0px 0px;
-    background-color: #f6f6f6;
-    margin-top:20px;
-    font-family: 'Shrikhand', cursive;
-    font-size: 23px;
-    position: relative;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px 50px 0px 0px;
+  background-color: #f6f6f6;
+  margin-top:20px;
+  font-family: 'Shrikhand', cursive;
+  font-size: 23px;
+  position: relative;
 }
 
 
 .retour{
-
-    width: 80%;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-
+  width: 80%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
 }
 
 
